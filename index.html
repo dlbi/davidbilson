@@ -1,9 +1,525 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>99products</title>
+	<title></title>
+	<style type="text/css">
+		body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #fff;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		* a {
+			text-decoration: none;
+			color: inherit;
+		}
+		.top {
+			background-color: black;
+			color:; 
+			text-align:;
+			width: 100%;
+			height: auto;
+			padding: 10px;
+		}
+		.container-3 {
+			text-align: center;
+			display: flex;
+			background-color: lightgray;
+			width: 100%;
+			padding:45px 5px;
+			height: 400px auto;
+			margin: auto;
+		}
+		.container-3 > div {
+			width:400px;
+			height: auto;
+			margin: 20px;
+			padding: 10px;
+			margin: auto;
+		}
+		.container-3 > div h3{
+			margin-top: 15px;
+		}
+		.boxed {
+			background-color: white;
+			width: 200px;
+			box-shadow: 4px 10px 16px #777777;
+			text-align: center;
+			padding: 10px;
+			margin: auto;
+			margin-top: 15px;
+		}
+		.container-2 {
+			padding: 60px;
+			display: flex;
+			width: 90%;
+			margin: auto;
+		}
+		.container-2 > div {
+			margin: 50px;
+			box-shadow: 4px 10px 16px #777777;
+			padding: 20px;
+			width: 400px;
+			margin: auto;
+		}
+		.container-2 > div:hover{
+			background:#67bdff;
+			color: white;
+			transition: 0.5s;
+		}
+		.container {
+			width: 100%;
+			margin: auto;
+			padding: 60px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.container > div {
+			width: 700px;
+			margin: auto;
+			margin: 60px;
+			height: 450px;
+		}
+		.container > div p {
+			width: 700px;
+			text-align: justify;
+		}
+		#butt {
+			padding: 7px 35px;
+			margin-top: 15px;
+			margin-left: 10px;
+			background:white;
+			color:#67bdff;
+			border:none;
+			transition: 1s;
+			box-shadow: 1px 6px 8px #777777;
+		}
+		.container > div button {
+			padding: 10px 35px;
+			margin-top: 20px;
+			color: white;
+			border:none;
+			background-image:linear-gradient(to right, #67bdff 50%, #1d3165); 
+		}
+		.container > div button:hover {
+			background-image: linear-gradient(to right, #67bdff 40%, white);
+			transition: 1s;
+		}
+		#wrap {
+			flex-wrap: wrap;
+		}
+
+		#img {
+			width: 700px;
+			height: auto;
+		}
+		footer {
+			background: rgb(1, 1, 133);
+			padding: 60px 30px;
+		}
+		.foot {
+			display: flex;
+			margin: 60px;
+		}
+		.foot > div {
+			color: white;
+			margin: 10px auto;
+
+		}
+		.foot > div ul{
+			list-style: none;
+			display: inline-flex;
+		}
+		.foot > div ul li {
+			margin:0px 15px;
+		}
+		#rights {
+			text-align: center;
+			color: lightgray;
+		}
+		.contact-box {
+			width: 85%;
+			margin: 40px auto;
+			background: url(portland.png);
+			background-size: 100% 100%:
+			background-repeat:no-repeat;
+			padding: 50px 70px;
+		}
+		.contact-box > div ul {
+			list-style: none;
+		}
+		.contact-box > div ul li {
+			margin: 13px 0px;
+		}
+		.contact-box > div h2 {
+			margin-bottom:20px;
+			font-size: 36px;
+		}
+		.contact-box > div p {
+			margin-bottom:20px;
+			color: gray;
+		}
+		.contact-box > div {
+			background: white;
+			padding: 60px;
+			min-width: 30%;
+			max-width: 600px;
+		}
+		#dii {
+			background: white;
+			text-align: center;
+			margin: 30px 0px;
+		} 
+		.health {
+			padding: 0px 180px;
+		}
+		.health button {
+			padding: 10px 35px;
+			margin-top: 60px;
+			color: white;
+			border:none;
+			background-image:linear-gradient(to right, #67bdff 50%, #1d3165); 
+		}
+		.health h1 {
+			font-size: 60px;
+			margin-bottom: 25px;
+		}
+		#colored {
+			color: #67bdff;
+		}
+		#usbout {
+			text-align: center;
+			margin-top: 80px;
+			font-size: 40px;
+		}
+	</style>
 </head>
 <body>
-<h1>HELLO WORLD!</h1>
+	<!--header navbar --->
+	<header class="header">
+  <a href="" class="logo"><img src="jcm.png" height="40" width="40">&nbsp;XLM Hospital</a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="#work">Our Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#careers">Careers</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
+	<!-- end of navbar-->
+<br><br><br><br><br><br>
+<div class="health">
+	<h1>Top Class <span id="colored">Health<br> Care</span> Hospital</h1>
+	<p>Currently, hospitals are largely staffed by<br> professional physicians, surgeons, nurses and allied.</p>
+	<button>Know More</button>
+</div>
+
+
+<h1 id="usbout">About Us</h1>
+<div class="container" id="wrap">
+	<div id="img">
+	
+		<img src="jhgcb.jfif" width="100%" height="auto">
+		</div>
+	<div>
+		<h1>Dr. Lavanya Sadanana</h1>
+		<h3 style="color: lightgray;">Founder, Senior Doctor, BlueHospital</h3>
+		<br><br><br><br>
+		
+		<p>We are 10 sparkling minds exploring human communication via digital assets. Our agency is based in London, sp we are pretty fancy looking. Also we put maximum efforts to achieve set goals and we make sure our clients gets what they need.</p><br>
+		<p>We are 10 sparkling minds exploring human communication via digital assets. Our agency is based in London, sp we are pretty fancy looking. Also we put maximum efforts to achieve set goals and we make sure our clients gets what they need.</p>
+		<br>
+		<p>We are 10 sparkling minds exploring human communication via digital assets. Our agency is based in London, sp we are pretty fancy looking. Also we put maximum efforts to achieve set goals \and we make sure our clients gets what they need.</p>
+		<button>Details &nbsp;&nbsp;&nbsp;></button>
+	</div>
+
+
+</div>
+
+<div class="container-2" id="wrap">
+	<div>
+		<h1 style="color: black;text-align: center; font-size: 35px;
+		box-shadow:2px 4px 6px #777777;  border-width: 0px;border-radius: 100px;width: 70px;padding:10px;border-style: solid;border-color: black;background-color: white;">&#12245;</h1>
+		<br>
+		<br>
+		<br>
+		<h1>Over 100+ Stretcher</h1>
+		<br>
+		<br>
+		<p> A hospital is a health care institution providing patient treatment with specialized medical...</p>
+		<p> A hospital is a health care institution providing patient treatment with specialized medical...</p>
+		<p> A hospital is a health care institution providing patient treatment with specialized medical...</p>
+		<br>
+		<br>
+		<br>
+		<a href="#">Read More</a>
+	</div>
+	<div>
+		<h1 style="color: black;text-align: center; font-size: 35px;
+		box-shadow:2px 4px 6px #777777;  border-width: 0px;border-radius: 100px;width: 70px;padding:10px;border-style: solid;border-color: black;background-color: white;">&#12245;</h1>
+		<br>
+		<br>
+		<br>
+		<h1>24 Hours Service</h1>
+		<br>
+		<br>
+		<p> A hospital is a health care institution providing patient treatment with specialized medical...</p>
+		<p> A hospital is a health care institution providing patient treatment with specialized medical...</p>
+		<p> A hospital is a health care institution providing patient treatment with specialized medical...</p>
+		<br>
+		<br>
+		<br>
+		<a href="#">Read More</a>
+	</div>
+	<div>
+		<h1 style="color: black;text-align: center; font-size: 35px;
+		box-shadow:2px 4px 6px #777777;  border-width: 0px;border-radius: 100px;width: 70px;padding:10px;border-style: solid;border-color: black;background-color: white;">&#12245;</h1>
+		<br>
+		<br>
+		<br>
+		<h1>High Tech Equipment</h1>
+		<br>
+		<br>
+		<p> A hospital is a health care institution providing patient treatment with specialized medical...</p>
+		<p> A hospital is a health care institution providing patient treatment with specialized medical...</p>
+		<p> A hospital is a health care institution providing patient treatment with specialized medical...</p>
+		<br>
+		<br>
+		<br>
+		<a href="#">Read More</a>
+	</div>
+</div>
+
+
+
+
+<div class="container" id="wrap">
+	<div>
+		<h1>What we do</h1>
+		<h3 style="color: lightgray;">CT Scan, Therapeutics, Splenectomy, High-end Surgery</h3>
+		<br><br><br><br>
+		
+		<p>We are 10 sparkling minds exploring human communication via digital assets. Our agency is based in London, sp we are pretty fancy looking. Also we put maximum efforts to achieve set goals and we make sure our clients gets what they need.</p><br>
+		<p>We are 10 sparkling minds exploring human communication via digital assets. Our agency is based in London, sp we are pretty fancy looking. Also we put maximum efforts to achieve set goals and we make sure our clients gets what they need.</p>
+		<br>
+		<p>We are 10 sparkling minds exploring human communication via digital assets. Our agency is based in London, sp we are pretty fancy looking. Also we put maximum efforts to achieve set goals \and we make sure our clients gets what they need.</p>
+		<button>Details &nbsp;&nbsp;&nbsp;></button>
+	</div>
+
+<div id="img">
+	
+		<img src="qrty.jfif" width="100%" height="auto">
+		</div>
+
+</div>
+<div style="background-color: #aba;padding: 70px;">
+<h1 style="text-align: center;">Testimonials</h1>
+	<p style="text-align: center;margin-top: 10px;">Hear from people things about our service and facility<br>that we provide in our hospital</p>
+</div>
+<div class="container-3" id="wrap">
+	
+	<div>
+		<img src="dre.png" width="110" height="100" style="border-radius: 200px;">
+		<h3>Walter White</h3>
+		<p style="color: gray;">Chemistry Teacher</p>
+		<p class="boxed">*Happy with the services of this hospital, its very prudent, suntaceously official and dream of beauty nature*</p>
+	</div>
+	<div>
+		<img src="qws.jfif" width="110" height="100" style="border-radius: 200px;">
+		<h3>Amy Jack</h3>
+		<p style="color: gray;">Bank Manager</p>
+		<p class="boxed">*Happy with the services of this hospital, its very prudent, suntaceously official and dream of beauty nature*</p>
+	</div>
+	<div>
+		<img src="customer.png" width="110" height="100" style="border-radius: 200px;">
+		<h3>John Franklin</h3>
+		<p style="color: gray;">Engineer/Copywriter</p>
+		<p class="boxed">*Happy with the services of this hospital, its very prudent, suntaceously official and dream of beauty nature*</p>
+	</div>
+	<div>
+		<img src="customer.png" width="110" height="100" style="border-radius: 200px;">
+		<h3>Sadio Peterson</h3>
+		<p style="color: gray;">Footballer/Hotel Owner</p>
+		<p class="boxed">*Happy with the services of this hospital, its very prudent, suntaceously official and dream of beauty nature*</p>
+	</div>
+</div>
+
+
+<h1 id="dii">How to contact us</h1>
+<div class="contact-box">
+		<div>
+			<h2>Contact US</h2>
+			<p>2323232323232323</p>
+			<ul>
+				<li><b>G-Icon </b>kyrutag@gmail.com</li>
+				<li><b>G-Icon </b>kyrutag@gmail.com</li>
+				<li><b>G-Icon </b>kyrutag@gmail.com</li>
+				<li><b>G-Icon </b>kyrutag@gmail.com</li>
+				<li><b>G-Icon </b>kyrutag@gmail.com</li>
+				<li><b>G-Icon </b>kyrutag@gmail.com</li>
+				<li><b>G-Icon </b>kyrutag@gmail.com</li>
+			</ul>
+		</div>
+</div>
+
+
+<footer>
+<div class="foot" id="wrap">
+	<div><h1><img src="#" height="40" width="40">&nbsp;XLM Hospital</h1></div>
+	<div>
+		<ul>
+			<li><a href="blueHousehospital.html">HOME</a></li>
+			<li>ABOUT US</li>
+			<li>SERVICES</li>
+			<li>CONTACT</li>
+			<li>FEEDBACK</li>
+		</ul>
+	</div>
+	<div><P><img src="facebook.jpg" width="40" height="40">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="twitter.png" width="40" height="40"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="whatsapp.png" width="40" height="40"></P></div>
+</div>
+<p id="rights">&copy;2022 All rights reserved.</p>
+</footer>
 </body>
 </html>
