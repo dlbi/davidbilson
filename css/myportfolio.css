@@ -1,0 +1,107 @@
+body {
+    width: 95%;
+    margin: auto;
+}
+.contact {
+    padding: 70px;
+    background-color:rgb(246, 246, 255);
+    color: black;
+    text-align: center;
+}
+.contact h2 {
+    font-size: 30px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.contact button {
+    background-color: black;
+    color:ghostwhite;
+    padding:13px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+}
+.contact button a{
+    text-decoration: none;
+    color: gainsboro;
+}
+.project-protect {
+    background: white;
+    text-align: center;
+    padding: 70px;
+}
+#protection {
+    font-size: 28px;
+    font-family: tahoma;
+}
+#prot {
+    font-size: 30px;
+}
+#padlock {
+    font-size: 45px;
+}
+#protection-paragraph {
+    font-size: 15px;
+    font-family: tahoma;
+}
+.support-project {
+    padding: 70px;
+    font-family: tahoma;
+    background-color: rgb(246, 246, 255);
+    display: flex;
+    flex-wrap: wrap;
+}
+.support-project > div {
+    margin: 40px;
+    width: 600px;
+}
+.support-project h2 {
+    font-size: 30px;
+}
+.support-project p {
+    font-size: 15px;
+}
+#support { 
+    font-size: 30px;}
+.become {
+    padding: 40px;
+    color: gainsboro;
+    text-align: center;
+    background-color: rgb(37, 37, 37);
+}
+.become p {
+    font-family: tahoma;
+    font-size: 16px;
+}
+.become button {
+    color: black;
+    font-size: 14px;
+    font-family: tahoma;
+    padding: 13px 60px;
+    background-color: gainsboro;
+}
+#responsive {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+         box-shadow: 0 8px 6px -6px black;
+}
+footer {
+    background-color: black;
+    color: whitesmoke;
+}
+.skills {
+    background-color: white;
+    text-align: center;
+}
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.skills ul li {
+    width: 400px;
+    height: 500px;
+    margin: 30px;
+    border: 2px solid black;
+}
