@@ -58,7 +58,7 @@ body {
     font-size: 30px;
 }
 .support-project p {
-    font-size: 15px;
+    font-size: 17px;
 }
 #support { 
     font-size: 30px;}
@@ -91,6 +91,12 @@ footer {
 .skills {
     background-color: white;
     text-align: center;
+    font-family: tahoma;
+    padding: 70px;;
+}
+.skills p {
+    width: 900px;
+    margin: auto;
 }
 .skills ul {
     display: flex;
@@ -101,7 +107,10 @@ footer {
 }
 .skills ul li {
     width: 400px;
-    height: 500px;
+    height: 450px;
     margin: 30px;
     border: 2px solid black;
+    -webkit-box-shadow: 0 8px 6px -3px black;
+    -moz-box-shadow: 0 8px 6px -3px black;
+    box-shadow: 0 8px 6px -3px black;
 }
