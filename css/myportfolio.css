@@ -1,7 +1,6 @@
 body {
     width: 95%;
     margin: auto;
-    background-image: url(/images/codes.jfif);
 }
 .contact {
     padding: 70px;
@@ -16,8 +15,8 @@ body {
 .contact button {
     background-color: black;
     color:ghostwhite;
-    padding:13px 20px;
-    font-size: 15px;
+    padding:9px 20px;
+    font-size: 14px;
     border: none;
     border-radius: 2px;
 }
@@ -77,19 +76,19 @@ body {
     color: black;
     font-size: 15px;
     font-family: tahoma;
-    padding: 13px 60px;
+    padding: 8px 35px;
     background-color: gainsboro;
 }
 footer {
     background-color: black;
-    color: gainsboro;
-    padding:50px;
+    color: rgb(192, 190, 190);
+    padding:30px;
     text-align: center;
     font-family: tahoma;
 }
 .thep {
-    color: gainsboro;
-    font-size: 13px;
+    color: #a7a7a7;
+    font-size: 75%;
 }
 .footer {
     display: flex;
@@ -97,14 +96,28 @@ footer {
     justify-content: center;
     align-items: center;
 }
+#logo {
+    color: gainsboro;
+    font-family: cursive;
+}
 .footer > div {
     width:400px;
     margin: 30px;  
-    text-align: left;
+    text-align: center;
     padding-left: 40px;
 }
 .footer > div p {
     font-size: 17px;
+}
+.footer > div ul {
+    list-style: none;
+    display: inline-flex;
+}
+.footer > div ul li {
+    padding: 0px 15px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-right: 1px solid gainsboro;
 }
 .skills {
     background-color: white;
@@ -112,9 +125,18 @@ footer {
     font-family: tahoma;
     padding: 70px;;
 }
+.skills h2 {
+    width: 120px;
+    padding: 10px;
+    font-family: tahoma;
+    margin: auto;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(11, 12, 11);
+}
 .skills p {
     width: 70%;
     margin: auto;
+    font-size: 17px;
 }
 .skills ul {
     display: flex;
@@ -123,25 +145,132 @@ footer {
     justify-content: center;
     align-items: center;
 }
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 .skills ul li {
     width: 300px;
-    height: 400px;
+    height: 300px;
     margin: 30px;
     border:none;
     -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     -moz-box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.skills ul li:hover{
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    
+}
 .bigger {
     margin-top: 10px;
     font-size: 16px;
     font-family: tahoma;
 }
-.aboutt {
-    height: 900px;
-    padding: 70px;
-    background: cyan;
+/* unvisited link */
+a:link {
+    color: rgb(151, 149, 149);
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(93, 102, 93);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(97, 136, 209);
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+section {
+    background:black;
+    padding: 10px 30px 100px 30px;
+    color: whitesmoke;
+    font-family: tahoma;
 }
-.aboutt h1 {
+section > div {
     text-align: center;
+    margin-top: 70px;
 }
+section > div p {
+    text-align: center;
+    font-size: 13px;
+    color: rgb(197, 197, 197);
+}
+section > div h1 {
+    text-align: center;
+    font-size: 40px;}
+section > div button {
+    font-size: 15px;
+    text-align: center;
+    padding: 7px 35px;
+    border: 1px ridge gainsboro;
+    background: rgb(157, 171, 250);
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    border-radius: 2px;
+}
+section > div button:hover{
+    background: rgb(110, 110, 170);
+    color:black;
+    border-style: groove;
+    transition: 0.4s;
+}
+section ul {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    list-style: none;
+    padding: 20px;
+    width: 100%;
+}
+section ul li {
+    margin-right:30px;
+}
+section ul li:nth-child(1) { 
+    margin-right: auto; /*applied only to the right*/ 
+    }
+section ul li:hover {
+    color: cadetblue;
+    transition: 0.4s;
+} 
+.ronaldo {
+    color: navy;
+}
+.aboutt {
+    width: 60%;
+    margin: auto;
+    padding-left:40px ;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    font-family: tahoma;
+    background-color: white;
+    box-shadow:rgb(157, 171, 250) 2px 7px 17px;
+    background: rgb(255, 255, 255);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-family: monospace;
+}
+.services {
+    padding: 20px 20px 70px 20px;
+    font-family: tahoma;
+    background-color: rgb(246, 246, 255);   
+  }
+  .services h1 {
+      text-align: center;
+  }
+  .services ul {
+        list-style: none;
+  }
+  .services ul li{
+      margin: 20px;
+      font-size: 18px;
+  }
+  .bigplus {
+      font-size: 26px;
+      color: rgb(61, 53, 83);
+  }
