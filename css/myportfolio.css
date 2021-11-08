@@ -1,9 +1,11 @@
 body {
-    width: 95%;
-    margin: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .contact {
-    padding: 70px;
+    padding: 40px;
     background-color:rgb(246, 246, 255);
     color: black;
     text-align: center;
@@ -14,15 +16,15 @@ body {
 }
 .contact button {
     background-color: black;
-    color:ghostwhite;
-    padding:9px 20px;
+    color:white;
+    padding:10px 50px;
     font-size: 14px;
     border: none;
     border-radius: 2px;
 }
 .contact button a{
     text-decoration: none;
-    color: gainsboro;
+    color: white;
 }
 .project-protect {
     background: white;
@@ -63,24 +65,32 @@ body {
 #support { 
     font-size: 30px;}
 .become {
-    padding: 40px;
+    padding: 30px 20px;
     color: gainsboro;
     text-align: center;
-    background:rgb(37, 37, 37); ;
+    background:rgb(37, 37, 37);
 }
 .become p {
     font-family: tahoma;
-    font-size: 16px;
+    font-size: 18px;
 }
 .become button {
-    color: black;
     font-size: 15px;
-    font-family: tahoma;
-    padding: 8px 35px;
-    background-color: gainsboro;
+    text-align: center;
+    padding: 10px 50px;
+    background: rgb(180, 0, 0);
+    color: rgb(241, 241, 241);
+    margin-top: 20px;
+    border: none;
+    border-radius: 2px;
+
 }
 footer {
-    background-color: black;
+    background: -webkit-gradient(linear, left top, 
+    left bottom, from(#000000), to(#000000));
+
+
+    margin: 0;
     color: rgb(192, 190, 190);
     padding:30px;
     text-align: center;
@@ -93,7 +103,7 @@ footer {
 .footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 #logo {
@@ -115,8 +125,9 @@ footer {
 }
 .footer > div ul li {
     padding: 0px 15px;
-    margin-left: 20px;
+    margin:0 22px;
     font-size: 18px;
+    color: silver;
     border-right: 1px solid gainsboro;
 }
 .skills {
@@ -167,13 +178,13 @@ footer {
 }
 /* unvisited link */
 a:link {
-    color: rgb(151, 149, 149);
+    color: rgb(235, 235, 235);
     text-decoration: none;
   }
   
   /* visited link */
   a:visited {
-    color: rgb(93, 102, 93);
+    color: rgb(240, 240, 240);
   }
   
   /* mouse over link */
@@ -187,77 +198,124 @@ a:link {
   }
 section {
     background:black;
-    padding: 10px 30px 100px 30px;
-    color: whitesmoke;
+    padding: 0 0px 110px 0px;
+    color: rgb(255, 255, 255);
     font-family: tahoma;
+    margin-bottom: 0;
+    width: 100%;
+    border-bottom: 5px solid blue;
 }
 section > div {
+    width: 70%;
+    padding: 300px 0px 150px;
+    margin: auto;
     text-align: center;
-    margin-top: 70px;
 }
 section > div p {
     text-align: center;
-    font-size: 13px;
-    color: rgb(197, 197, 197);
+    font-size: 18px;
+    color: rgb(255, 255, 255);
 }
-section > div h1 {
-    text-align: center;
-    font-size: 40px;}
-section > div button {
+.aboutt button {
     font-size: 15px;
     text-align: center;
     padding: 7px 35px;
-    border: 1px ridge gainsboro;
-    background: rgb(157, 171, 250);
+    border: none;
+    background: -webkit-gradient(linear, left top, 
+ left bottom, from(#ffffff), to(#ffffff));
+
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     color: rgb(0, 0, 0);
     margin-top: 20px;
     border-radius: 2px;
 }
+section > div h1 {
+    text-align: center;
+    font-size: 42px;}
+section > div button {
+    font-size: 15px;
+    text-align: center;
+    padding: 9px 60px;
+    border: 1.5px solid white;
+    background: none;
+    font-weight: 600;
+    color:white;
+    margin-top: 60px;
+    border-radius: 2px;
+}
 section > div button:hover{
-    background: rgb(110, 110, 170);
-    color:black;
+    transition: 1.4s;
+    background:blue;
+ 
+
+    color:white;
     border-style: groove;
-    transition: 0.4s;
+    
 }
 section ul {
     display: inline-flex;
     flex-wrap: nowrap;
-    text-align: center;
     list-style: none;
-    padding: 20px;
-    width: 100%;
+    padding: 15px 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:95%;
+    margin-top: -9px;
+    color: white;
+    background: white;
+    position: fixed;
+    top: 0;
 }
 section ul li {
-    margin-right:30px;
+    margin:0 22px;
+    font-size: 17px;
+    color: black;
 }
 section ul li:nth-child(1) { 
     margin-right: auto; /*applied only to the right*/ 
+    font-weight: 900;
+    color:black;
+    font-size: 2em;
+    font-family:Arial, Helvetica, sans-serif ;
     }
-section ul li:hover {
-    color: cadetblue;
-    transition: 0.4s;
-} 
+#coda {
+    color: red;
+}
 .ronaldo {
     color: navy;
 }
+.aboutt h1 {
+    text-align: center;
+}
+.h1e {
+    text-align: center;
+}
 .aboutt {
-    width: 60%;
+    width: 80%;
     margin: auto;
-    padding-left:40px ;
-    padding-right: 60px;
+    padding-left:80px ;
+    padding-right: 80px;
     padding-top: 20px;
+    text-align: justify;
     padding-bottom: 100px;
     font-family: tahoma;
-    background-color: white;
-    box-shadow:rgb(157, 171, 250) 2px 7px 17px;
-    background: rgb(255, 255, 255);
+    background: none;
     margin-top: 60px;
     margin-bottom: 60px;
     font-family: monospace;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.aboutt > div {
+    width: 600px;
+    margin: 40px;
 }
 .services {
-    padding: 20px 20px 70px 20px;
+    padding: 40px 20px 70px 20px;
     font-family: tahoma;
+    color: rgb(0, 0, 0);
     background-color: rgb(246, 246, 255);   
   }
   .services h1 {
@@ -265,12 +323,53 @@ section ul li:hover {
   }
   .services ul {
         list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
   }
   .services ul li{
-      margin: 20px;
-      font-size: 18px;
+      margin: 40px;
+      font-size: 20px;
   }
   .bigplus {
       font-size: 26px;
-      color: rgb(61, 53, 83);
+      color: black;
   }
+  .about-content .line {
+    width: 150px;
+    height: 3px;
+    margin-top: 30px;
+    background: black;
+}
+.about-content p {
+    margin-top: 30px;
+}
+.about-content ul {
+    margin-top: 30px;
+    list-style: none;
+}
+.about-content ul li {
+    margin: 10px 0;
+}
+.social-icon i {
+    padding: 10;
+    font-size: 10px;
+    color: orange;
+    border: 1px solid;
+}
+.fa-li {
+    color: orangered;
+    font-size: 20px;
+    font-weight: 900;
+    margin-left: -40px;
+}
+.footerh1 {
+    color:white;
+    font-weight: 900;
+    font-size: 45px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+     Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
