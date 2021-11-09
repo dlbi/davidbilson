@@ -17,8 +17,8 @@ body {
 .contact button {
     background-color: black;
     color:white;
-    padding:10px 50px;
-    font-size: 14px;
+    padding:15px 65px;
+    font-size: 20px;
     border: none;
     border-radius: 2px;
 }
@@ -75,9 +75,9 @@ body {
     font-size: 18px;
 }
 .become button {
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
-    padding: 10px 50px;
+    padding: 15px 65px;
     background: rgb(180, 0, 0);
     color: rgb(241, 241, 241);
     margin-top: 20px;
@@ -217,9 +217,9 @@ section > div p {
     color: rgb(255, 255, 255);
 }
 .aboutt button {
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
-    padding: 7px 35px;
+    padding: 15px 65px;
     border: none;
     background: -webkit-gradient(linear, left top, 
  left bottom, from(#ffffff), to(#ffffff));
@@ -233,9 +233,9 @@ section > div h1 {
     text-align: center;
     font-size: 42px;}
 section > div button {
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
-    padding: 9px 60px;
+    padding: 15px 65px;
     border: 1.5px solid white;
     background: none;
     font-weight: 600;
