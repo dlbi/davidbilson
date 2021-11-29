@@ -90,13 +90,14 @@ li {
         width: 100%;
         border-radius: 10px;
         text-align: center;
-        transition: 0.5s;
+        transition: 0.4s;
         box-shadow:
             0 10px 27px rgba(0, 0, 0, 0.05);
     }
 .header
     .nav-menu.active {
         left: 0;
+        z-index: 10000;
     }
 
     .nav-item {
@@ -147,7 +148,7 @@ li {
         padding: 13px 40px;
         font-size: 17px;
         border-radius: 3px;
-        transition: 0.7s;
+        transition: 0.3s;
     }
     section button:hover {
         background-color:#45a29e;
@@ -160,7 +161,7 @@ li {
         padding: 0px 10px;
     }
     .about > div {
-        margin: 10px;
+        margin: 0px;
     }
     .about .divt {
         padding-left: 0px;
