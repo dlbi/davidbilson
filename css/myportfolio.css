@@ -127,12 +127,12 @@ li {
     section {
         width: 100%;
         height: auto;
-        padding: 250px  10px 200px 10px;
+        padding: 250px 10px 200px 10px;
         background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFx4b03SXPJESjf7Hj1XzX9SK4C2N2zELuhA&usqp=CAU");
        background-repeat:no-repeat;
 background-size:cover;
-background-position:0 0;
- text-align: center;
+background-position:center;
+ text-align:center;
     }
     section h1 {
         font-size: 40px;
@@ -401,4 +401,4 @@ background-position:0 0;
         .fadeIn {
             -webkit-animation-name: fadeIn;
             animation-name: fadeIn;
-        }
+        }background-position: 25% 75%;
