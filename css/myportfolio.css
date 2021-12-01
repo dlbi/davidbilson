@@ -128,7 +128,7 @@ li {
         width: 100%;
         height: auto;
         padding: 250px  10px 200px 10px;
-        background: #1f2833;
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFx4b03SXPJESjf7Hj1XzX9SK4C2N2zELuhA&usqp=CAU");
         text-align: center;
     }
     section h1 {
@@ -144,14 +144,14 @@ li {
         margin-top: 24px;
         color: #f5f5f5;
         border: 1px solid #45a29e;
-        background: none;
+        background: #45a29e;
         padding: 13px 40px;
         font-size: 17px;
         border-radius: 3px;
         transition: 0.3s;
     }
     section button:hover {
-        background-color:#45a29e;
+        background-color:none;
     }
     .about {
         display: flex;
