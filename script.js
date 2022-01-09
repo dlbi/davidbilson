@@ -22,3 +22,13 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+$(window).scroll(function() {
+    if ($(this).scrollTop()>2050)
+     {
+        $('.services').hide(5000);
+     }
+    else
+     {
+      $('.services').show(5000);
+     }
+ });
