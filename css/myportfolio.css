@@ -176,7 +176,7 @@ li {
     }
     .about img {
         border-radius: 1000px;
-        box-shadow:0px 8px 16px #242424;
+        box-shadow:0px 8px 16px #cccccc;
     }
     .about > div {
         margin-bottom: 25px;
@@ -667,12 +667,17 @@ footer button {
         background-repeat: no-repeat;
 justify-content: center;
 align-items: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
 }
-
+.transparent > div {
+    margin:50px 80px;
+}
 .transdiv {
 
-    padding: 30px;
-    margin: 60px auto;
+  
     text-align: center;
     color: rgb(255, 255, 255);
 }
@@ -727,24 +732,25 @@ align-items: center;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     text-align: center;
 }
 
 .zeke > div .adre {
     text-align: center;
     font-size: 16px;
-    color: rgb(243, 243, 243);
-    background: rgb(24, 24, 24);
-    padding:14px 40px;
-    margin-top: 15px;
-    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    background: none;
+    border: 1px ridge rgb(41, 41, 41);
+    padding:12px 40px;
+    margin-top: 35px;
+    border-radius: 2px;
     width: fit-content;
     margin: auto;
 }
 .zeke > div .adre:hover {
-    background:rgb(226, 226, 226);
-        color:rgb(0, 0, 0);
+    background:rgb(17, 17, 17);
+        color:rgb(233, 233, 233);
         transition: 0.5s;
 }
 .first {
@@ -800,6 +806,7 @@ align-items: center;
     margin-bottom: 30px;
 }
 .port {
+    margin-top: 50px;
     padding: 60px 20px;
 }
 .prolist {
@@ -813,4 +820,27 @@ align-items: center;
     width: 320px;
     height: 250px;
     margin: 20px;
+}
+.allp {
+    text-align: center;
+    margin: 30px auto 50px auto;
+    font-size: 17px;
+}
+.allpro {
+    text-align: center;
+    background: rgb(231, 231, 231);
+    color: #b1b1b1;
+    font-size: 18px;
+    padding: 14px 30px;
+    border-radius: 100px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
+
+}
+.disclaimer {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px;
 }
