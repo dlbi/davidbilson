@@ -114,9 +114,15 @@ header {
     margin: auto;
 }
 .sticky-header h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 700;
-    color: #ccc;
+    color: lavender;
+    background-image: linear-gradient(to right,#a47325, darkcyan);
+background-size: 100%;
+background-repeat: repeat;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-background-clip: text;
 }
 .sticky-header ul {
     display: flex;
@@ -127,9 +133,9 @@ header {
 .sticky-header ul li {
     margin: 10px;
     padding: 5px;
-    font-size: .8rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    color: #ddd;
+    color: lavender;
 }
 .sticky-header ul li:hover {
     border-bottom: 1px solid white;
@@ -158,11 +164,11 @@ header {
 }
 .intro h1 {
     font-size: 5rem;
-    color: #eee;
+    color: lavender;
 }
 #int1 {
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 800;
     margin: 10px 0;
     font-weight: 100;
     color: darkcyan;
@@ -170,9 +176,9 @@ header {
 #int2 {
     max-width: 570px;
     margin: 10px 0;
-    font-size: 1rem;
-    line-height: 1.3rem;
-    color: rgb(160, 160, 160);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: grey;
 }
 .intro > div:nth-child(1) {
     padding: 1vh;
@@ -188,14 +194,22 @@ header {
     text-decoration: none;
 }
 .intro > div:nth-child(1) button {
-    padding: 13px 40px;
-    border-radius: 40px;
-    border: 2px solid silver;
+    padding:15px 40px;
+    border-radius: 20px 0px 20px 0px;
+    border: 3px solid #aaa;
     margin: 40px 0 0 0;
     color: #eee;
-    font-size: .8rem;
+    font-size: 1.1rem;
     background: none;
+    background-image: linear-gradient(to right, darkcyan, #a47325);
+    border: none;
+    transition: .5 ease-in-out;
+    cursor: pointer;
 }
+.intro > div:nth-child(1) button:hover {
+    background-image: linear-gradient(to right, #a47325, darkcyan);
+}
+/* }
 .intro > div:nth-child(2) {
     width:700px;
     height:800px;
@@ -261,8 +275,9 @@ header {
     align-items: center;
     text-shadow: 0px 0px 10px black;
     background: rgb(218, 218, 218);
-    box-shadow: 10px 10px 80px rgb(0, 0, 0);
-}
+    box-shadow: 10px 10px 80px rgb(0, 0, 0); */
+/* } */
+
 .portfolio-section {
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(1rem);
@@ -282,8 +297,14 @@ header {
 }
 .recent-work {
     font-size: 3rem;
-    color: #aaa;
+    color: lavender;
     margin-top:-35px ;
+    background-image: linear-gradient(to right,darkcyan, #a47325);
+background-size: 100%;
+background-repeat: repeat;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-background-clip: text;
 }
 .work-section {
     display: flex;
@@ -312,14 +333,20 @@ header {
     padding: 1.5vh;
 }
 .p-btn p {
-    color: #777;
+    color: #999;
 }
 .p-btn button {
     padding: 10px 20px;
     margin-top:10px ;
-    font-size: .9rem;
+    font-size: 1rem;
+    font-weight: 900;
     background: none;
-    color: #777;
+    background-image: linear-gradient(to right,#a47325, darkcyan);
+background-size: 100%;
+background-repeat: repeat;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-background-clip: text;
     border: 2px solid #333;
 }
 .p-btn button:active {
@@ -338,6 +365,7 @@ footer {
     min-height:10vh ;
     font-size: 12px;
 }
+
 .about-me {
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
@@ -345,7 +373,7 @@ footer {
     padding: 1vh;
 }
 .about-me > div {
-    max-width: 1500px;
+    max-width: 1600px;
     margin: auto;
     padding: 10vh 0;
 }
@@ -356,16 +384,22 @@ footer {
     align-items: center;
 }
 .flex-about > div:nth-child(1) {
-    max-width: 600px;
+    max-width: 700px;
 }
 .flex-about > div:nth-child(1) h1 {
     font-size: 3rem;
-    color: #777;
+    color: lavender;
+background-image: linear-gradient(to bottom right,darkcyan, #a47325);
+background-size: 100%;
+background-repeat: repeat;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-background-clip: text;
 }
 .flex-about > div:nth-child(1) p {
-    font-size: 1rem;
-    line-height: 1.4rem;
-    color: #777;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #999;
 }
 .flex-about > div:nth-child(1) h3 {
     font-size: 1.5rem;
@@ -530,9 +564,9 @@ footer {
 }
 .form-box form button {
     padding: 15px 20px;
-    background: #222;
+    background:darkcyan;
     font-size: 17px;
-    color: #ddd;
+    color: white;
     border: none;
 }
 #visName {
@@ -590,6 +624,12 @@ footer {
     text-align: center;
     color: darkcyan;
     font-size: 2.5rem;
+    background-image: linear-gradient(to bottom right,darkcyan, #a47325);
+background-size: 100%;
+background-repeat: repeat;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-background-clip: text;
 }
 .client-box {
     display: flex;
@@ -603,14 +643,15 @@ footer {
     margin: 30px;
 }
 .client-box p {
-    color: rgb(153, 153, 153);
+    color: silver;
     line-height: 1.5rem;
-    font-size: .9rem;
+    font-size: 1.2rem;
 }
 .cl-name { background-image: linear-gradient(to bottom, #222, rgb(0, 158, 158));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 @media (max-width:650px) {
     .circle2 {
     background: rgb(97, 97, 97);
@@ -659,6 +700,12 @@ header {
     font-size: 1.3rem;
     font-weight: 700;
     color: #ccc;
+    background-image: linear-gradient(to right,#a47325, darkcyan);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
 }
 .sticky-header ul {
     display: flex;
@@ -671,7 +718,7 @@ header {
     padding: 5px;
     font-size: .8rem;
     font-weight: 800;
-    color: rgb(163, 163, 163);
+    color: lavender;
 }
 .sticky-header ul li:hover {
     border-bottom: 1px solid white;
@@ -683,18 +730,13 @@ header {
     color: #555;
 }
 
-
-
-
-
-
 .namesection {
     width: 100%;
     min-height: 70vh;
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(1rem);
     margin-top: 7vh;
-    padding: 2vh; 
+    padding: 20px; 
 }
 .intro {
     display: flex;
@@ -706,10 +748,11 @@ header {
 }
 .intro h1 {
     font-size: 3rem;
-    color: #eee;
+    color: lavender;
 }
 #int1 {
-    font-size: 1.1rem;
+    font-size: 1.5em;
+    line-height: 2rem;
     font-weight: 700;
     margin: 10px 0;
     font-weight: 100;
@@ -718,8 +761,9 @@ header {
 #int2 {
     max-width: 570px;
     margin: 10px 0;
-    font-size: .9rem;
+    font-size: 1rem;
     line-height: 1.3rem;
+    color:gray;
 }
 .intro > div:nth-child(1) {
     padding: 2vh 0;
@@ -727,6 +771,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* background: greenyellow; */
 }
 .intro > div:nth-child(1) a { 
     text-decoration: none;
@@ -735,83 +780,16 @@ header {
     text-decoration: none;
 }
 .intro > div:nth-child(1) button {
-    padding: 13px 40px;
+    /* padding: 13px 40px;
     border-radius: 40px;
-    border: 2px solid #ddd;
+    border: 2px solid #ccc;
     margin: 40px 0 0 0;
-    color: #ddd;
+    color: #ccc;
     font-size: .8rem;
     background: none;
-    transition: ease-in-out;
+    transition: ease-in-out; */
+    font-size: 1rem;
 }
-.intro > div:nth-child(1) button:active {
-    background: #111;
-    border: 2px solid #111;
-}
-.intro > div:nth-child(2) {
-    width:auto;
-    min-height:600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-@keyframes cardAnime {
-    0% {
-        z-index: 0;
-        transition: 1s;
-    }
-    10% {
-        z-index: 5;
-        transition: 1s;
-        box-shadow:none;
-    }
-    30% {
-        z-index: 7;
-        transition: 1s;
-        box-shadow: 10px 10px 20px rgb(0, 0, 0);
-    }
-    50% {
-        z-index: 7;
-        transition: 1s;
-        box-shadow: 10px 10px 60px rgb(0, 0, 0);
-    }
-    
-    70% {
-        z-index: 7;
-        transition: 1s;
-        box-shadow: 10px 10px 20px rgb(0, 0, 0);
-    }
-    90% {
-        z-index: 5;
-        transition: 1s;
-        box-shadow: none;
-    }
-    100% {
-        z-index: 5;
-        transition: 1s;
-        box-shadow: 10px 10px 80px rgb(0, 0, 0);
-    }
-
-}
-.movingcards1 {
-    width:260px;
-    height: 550px;
-    background: rgb(255, 255, 255);
-    margin-left: -140px;
-    box-shadow: 20px 20px 80px rgb(0, 0, 0);
-    z-index: 5;
-}
-.movingcards2 {
-    animation-name: cardAnime;
-    animation-duration: 8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    width:210px;
-    height: 210px;
-    background: rgb(255, 255, 255);
-    box-shadow: 10px 10px 80px rgb(0, 0, 0);
-}
-
 .portfolio-section {
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(1rem);
@@ -849,7 +827,7 @@ header {
     flex-wrap: wrap;
 }
 .work-section > div {
-    width: 320px;
+    width: 85%;
     min-height: 450px;
     border: 2px inset darkcyan;
     margin: 30px 0;
@@ -872,12 +850,13 @@ header {
     color: #777;
 }
 .p-btn button {
-    padding: 10px 20px;
+    /* padding: 10px 20px;
     margin-top:10px ;
     font-size: .9rem;
     background: none;
     color: #777;
-    border: 2px solid #333;
+    border: 2px solid #333; */
+    font-size: .9rem;
 }
 .p-btn button:active {
     padding: 8px 18px;
@@ -980,9 +959,9 @@ header {
 }
 .form-box form button {
     padding: 15px 20px;
-    background: #222;
+    background:#a47325;
     font-size: 16px;
-    color: #aaa;
+    color: #000;
     border: none;
 }
 #visName {
